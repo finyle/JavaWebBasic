@@ -72,7 +72,10 @@ public class ReflectDemo2 {
         }
         //Field getDeclareField(String name)
         Field d = personClass.getDeclaredField("d");
-
+        //忽略访问权限修饰符的安全检查
+        d.setAccessible(true); //暴力反射
+        Object value2 = d.get(p);
+        System.out.println(value2);
 
 
     }
