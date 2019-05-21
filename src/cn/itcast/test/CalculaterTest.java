@@ -43,4 +43,14 @@ public class CalculaterTest {
         Assert.assertEquals(3,result);
 
     }
+
+    @Test
+    public void testSub() {
+        Calculater b = new Calculater();
+
+        int result1 = b.sub(2,1);
+        System.out.println("testSub...");
+
+        Assert.assertEquals(1,result1);
+    }
 }
